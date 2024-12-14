@@ -1,0 +1,37 @@
+header {
+    @include media-breakpoint-up(xxl) {
+        > .container {
+            max-width: 1700px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        img {
+            width: 200px;
+            height: 37px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        img {
+            width: 112px;
+            height: 21px;
+        }
+    }
+
+    a:hover {
+        text-decoration: underline !important;
+    }
+
+    #view-selector-container {
+        @include media-breakpoint-down(lg) {
+            display: none !important;
+        }
+    }
+
+    #ordering-dropdown {
+        @include media-breakpoint-down(lg) {
+            display: none !important;
+        }
+    }
+}

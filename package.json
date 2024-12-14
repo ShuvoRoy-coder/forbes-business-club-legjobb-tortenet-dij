@@ -1,0 +1,21 @@
+{
+  "name": "forbes-business-club-legjobb-tortenet-dij",
+  "version": "0.0.1",
+  "private": true,
+  "description": "2024 selfmade lista",
+  "author": "Milcomp Services kft.",
+  "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
+  "scripts": {
+    "dev": "rm -rf ./.parcel-cache ./assets/build && parcel assets/src/styles/app.scss assets/src/js/app.js --dist-dir assets/build",
+    "build": "rm -rf ./.parcel-cache ./assets/build && parcel build assets/src/styles/app.scss assets/src/js/app.js --dist-dir assets/build --no-source-maps"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "parcel": "^2.9.3",
+    "purgecss": "^5.0.0"
+  }
+}

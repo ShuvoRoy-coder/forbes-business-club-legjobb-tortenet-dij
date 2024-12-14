@@ -1,0 +1,20 @@
+footer {
+  a,
+  p {
+    font-family: JohnnieWalkerSans-Book;
+  }
+
+  a {
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
+
+  .forbes-logo {
+    max-width: 516px;
+    max-height: 31px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+}

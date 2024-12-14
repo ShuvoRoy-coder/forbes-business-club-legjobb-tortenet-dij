@@ -1,0 +1,38 @@
+.boxes__component {
+    .box {
+        border-radius: 1.125rem;
+
+        .description {
+            line-height: 1.7;
+        }
+
+        .img-container {
+            border-radius: 1.125rem;
+            height: 308px;
+
+            @include media-breakpoint-down(xxl) {
+                height: 260px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                height: 211px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                height: 185px;
+            }
+
+            @include media-breakpoint-down(md) {
+                height: 225px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                height: 125px;
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

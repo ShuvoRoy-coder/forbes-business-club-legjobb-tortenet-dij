@@ -1,0 +1,80 @@
+.contact-form__component {
+  $ff-font: JohnnieWalkerSans-Book;
+
+  .buttons-container {
+    border-radius: 7px;
+    padding: 2px;
+  }
+
+  .form-container {
+    border-radius: 2rem;
+    z-index: 1;
+
+    label {
+      font-family: $ff-font;
+    }
+
+    .form-label {
+      transform: translateY(9px);
+      font-size: 0.625rem;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    input,
+    textarea {
+      font-family: $ff-font;
+      border-color: white;
+      border-radius: 7px;
+
+      &:focus {
+        border-color: white;
+        box-shadow: none;
+      }
+    }
+
+    .form-check {
+      label {
+        transform: translateY(-3px);
+        font-size: 10px;
+      }
+
+      input {
+        border-radius: 3px;
+      }
+    }
+
+    button {
+      transition: background-color 0.3s;
+      font-family: $ff-font;
+      border-radius: 7px;
+
+      &:disabled {
+        opacity: 0.3;
+      }
+
+      &:hover:not(:disabled):not(#applicateMySelf):not(#applicateOther) {
+        background-color: tint-color($forbes10-grey-100, 40%) !important;
+      }
+    }
+  }
+
+  .spinner-border {
+    width: 24px;
+    height: 24px;
+  }
+
+  .success-message {
+    font-family: $ff-font;
+    color: #038c15;
+  }
+
+  .captcha-terms {
+    font-family: $ff-font;
+    font-size: 0.625rem;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

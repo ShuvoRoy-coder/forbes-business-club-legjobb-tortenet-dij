@@ -1,0 +1,94 @@
+.voting-subscribe__component {
+  $ff-font: JohnnieWalkerSans-Book;
+
+  h2 {
+    @include media-breakpoint-down(md) {
+      font-size: 1.75rem;
+    }
+  }
+
+  h3 {
+    color: #f24c21;
+  }
+
+  form {
+    border-radius: 2rem;
+    z-index: 1;
+
+    label {
+      font-family: $ff-font;
+    }
+
+    .form-label {
+      transform: translateY(9px);
+      font-size: 0.75rem;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    input,
+    textarea {
+      font-family: $ff-font;
+      border-color: $orange;
+      border-radius: 7px;
+      border-width: 2px;
+
+      &:focus {
+        border-color: $orange;
+        box-shadow: none;
+      }
+    }
+
+    .form-check {
+      label {
+        transform: translateY(-3px);
+        font-size: 10px;
+      }
+
+      input {
+        border-radius: 3px;
+
+        &:checked {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+          background-color: $orange;
+          border-color: $orange;
+        }
+      }
+    }
+
+    button {
+      transition: background-color 0.3s, border-color 0.3s;
+      font-family: $ff-font;
+      border-radius: 7px;
+
+      &:disabled {
+        opacity: 0.3;
+      }
+
+      &:hover:not(:disabled) {
+        background-color: tint-color($forbes10-grey-100, 40%) !important;
+
+        border-color: tint-color($forbes10-grey-100, 40%) !important;
+      }
+    }
+  }
+
+  .spinner-border {
+    width: 20px;
+    height: 20px;
+  }
+
+  .success-message {
+    font-family: $ff-font;
+    color: #038c15;
+  }
+
+  .captcha-terms {
+    font-family: $ff-font;
+    font-size: 0.625rem;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

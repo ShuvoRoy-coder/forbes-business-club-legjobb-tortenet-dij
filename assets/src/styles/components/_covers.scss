@@ -1,0 +1,13 @@
+.covers__component {
+    @include media-breakpoint-down(lg) {
+        img {
+            height: 350px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        img {
+            height: 200px;
+        }
+    }
+}
